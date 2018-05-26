@@ -1,0 +1,20 @@
+{
+  "name": "my_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass styles/app.scss -o build",
+    "min": "minify -o build/result.min.css build/app.css"
+  },
+  "author": "Turowskaya",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "reset-css": "^3.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0",
+    "minifier": "^0.8.1"
+  }
+}

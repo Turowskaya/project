@@ -1,0 +1,40 @@
+@import "../node_modules/reset-css/_reset.scss";
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "variables";
+@import "mixin";
+@import "header";
+@import "about";
+@import "skills";
+@import "statistic.scss";
+@import "work.scss";
+@import "work-process.scss";
+@import "services";
+@import "testimonials";
+@import "clients";
+@import "contact-form";
+@import "section-down.scss";
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+};
+@font-face {
+  font-family: 'MontserratMedium';
+  src: url("../fonts/Montserrat-Medium.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+};
+@font-face {
+  font-family: 'NunitoSans';
+  src: url("../fonts/NunitoSans-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+};
+.wrapper-project{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+}

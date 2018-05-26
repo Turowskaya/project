@@ -1,0 +1,29 @@
+.statistic{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 240px;
+  background-color: $primary_color;
+
+  &__container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 220px; //поробовать потом поставить ширину авто
+    height: 40px;
+    //border: 0.5px solid black;
+    color: $text_color;
+  }
+  &__icon{
+    margin-right: 30px;
+    align-self: center;
+  }
+  &__items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+}
