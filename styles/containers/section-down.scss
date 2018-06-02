@@ -1,0 +1,28 @@
+.section-down{
+  @include displayFlex(row, space-around, center, nowrap);
+  height: 285px;
+  background-color: #141414;
+  color: #bcbcbc;
+  font-size: 15px;
+  &__logo{
+    @include displayFlex(column, flex-start, stretch, wrap);
+    width: 225px;
+  }
+  &__contact{
+    @include displayFlex(column, flex-start, stretch, wrap);
+    width: 150px;
+  }
+  &__items{
+    @include displayFlex(row, space-between, stretch, wrap);
+    width: 200px;
+  }
+  &__item{
+    color: #bcbcbc;
+    text-decoration: none;
+    &:hover{
+      text-decoration: none;
+      color: $primary_color;
+      cursor: pointer;
+    }
+  }
+}

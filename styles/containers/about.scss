@@ -1,0 +1,11 @@
+.about{
+  @include displayFlex(column, center, center, nowrap);
+  height: 420px;
+
+  &__container{
+    width: 640px;
+    height: 225px;
+    @include displayFlex(column, space-between, center, nowrap);
+    text-align: center;
+    }
+}

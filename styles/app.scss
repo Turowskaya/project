@@ -1,18 +1,20 @@
 @import "../node_modules/reset-css/_reset.scss";
 @import "../node_modules/bootstrap/scss/bootstrap";
-@import "variables";
-@import "mixin";
-@import "header";
-@import "about";
-@import "skills";
-@import "statistic.scss";
-@import "work.scss";
-@import "work-process.scss";
-@import "services";
-@import "testimonials";
-@import "clients";
-@import "contact-form";
-@import "section-down.scss";
+@import "common/variables";
+@import "common/mixin";
+@import "containers/header";
+@import "containers/about";
+@import "containers/skills";
+@import "containers/statistic";
+@import "containers/work";
+@import "containers/work-process";
+@import "containers/services";
+@import "containers/testimonials";
+@import "containers/clients";
+@import "containers/contact-form";
+@import "containers/section-down";
+@import "common/toTop";
+@import "common/mediaQuery";
 
 @font-face {
   font-family: 'Montserrat';
@@ -37,4 +39,30 @@
   flex-direction: column;
   width: 100%;
   justify-content: center;
+  overflow: hidden;
 }
+
+//@media (max-width: 991px){
+//  .navbar-nav{
+//    @include displayFlex(column, space-around, flex-start, nowrap);
+//    width: 100px;
+//  }
+//  .navbar-collapse{
+//    flex-basis: 120px;
+//  }
+//
+//}
+//@media (max-width: 749px){
+//  .section-head{
+//    height: 200px;
+//  }
+//  .section-head__button{
+//    display: none;
+//  }
+//  .section-head__banner{
+//    display: none;
+//  }
+//  .statistic {
+//    @include displayFlex(row, space-around, center, wrap);
+//  }
+//}

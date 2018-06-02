@@ -1,0 +1,45 @@
+.testimonials {
+  @include displayFlex(column, center, center, nowrap);
+  height: 500px;
+  background-color: $primary_color;
+
+
+  &__carousel {
+    @include displayFlex(column, center, center, nowrap);
+    height: 500px - 55px;
+  }
+  &__innerCarousel{
+    @include displayFlex(column, center, center, nowrap);
+  }
+  &__slide{
+    height: 200px;
+    width: 800px;
+  }
+  &__caption {
+    @include displayFlex(column, center, center, nowrap);
+    height: 150px;
+    font-family: $project_font_family_text;
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+  &__name-size {
+    font-family: $project_font_family_primary;
+    text-transform: uppercase;
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  &__carouselIndicators{
+    @include displayFlex(row, center, center, nowrap);
+    height: 10px;
+  }
+  &__carouselIndicators &__carouselIndicators-i{
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+  }
+  &__carouselIndicators &__carouselIndicators-i.active{
+    border-radius: 50%;
+    width: 7px;
+    height: 7px;
+  }
+}

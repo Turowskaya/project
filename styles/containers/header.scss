@@ -1,0 +1,79 @@
+.section-head{
+  @include displayFlex(row, flex-end, flex-start, wrap);
+  height: 650px;
+  background-color: $color_background;
+  &__pro{
+    @include displayFlex(row, space-between, flex-start, nowrap);
+    width: 95%;
+    margin-top: 5%;
+  }
+  &__logo{
+    background: url("../img/header/logo.png") no-repeat;
+    width: 31px;
+    height: 25px;
+    margin-right: 0;
+    animation: section-head__logo 3s linear 2s 1 normal;
+  }
+  &__menu{
+    @include displayFlex(row, space-around, flex-start, nowrap);
+    margin-right: 5%;
+    width: 100%;
+  }
+  &__link{
+    color: black;
+    font-family: $project_font_family_primary;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    &:hover{
+      text-decoration: none;
+      color: $primary_color;
+      cursor: pointer;
+      }
+  }
+  &__banner{
+    @include displayFlex(column, space-around, flex-start, nowrap);
+    margin-right: 10%;
+    height: 50%;
+    width: 35%;
+  }
+  &__caption{
+    font-size: 38px;
+    font-weight: bold;
+    font-family: $project_font_family_text;
+  }
+  &__text{
+    font-size: 18px;
+    font-family: $project_font_family_h;
+    color: $text_color-grey;
+  }
+  &__button{
+     @include button;
+  }
+  &__navbar{
+    width: 100%;
+    @include displayFlex(row, space-between, flex-start, nowrap);
+  }
+  &__navbar-collapse{
+    @include displayFlex(row, flex-end, flex-start, nowrap);
+    background: $color_background;
+    width: 600px;
+  }
+  &__navbar-nav{
+    @include displayFlex(row, space-around, flex-start, nowrap);
+    width: 58%;
+  }
+}
+.active-link{
+  text-decoration: none;
+  color: $primary_color;
+  cursor: pointer;
+}
+
+@keyframes section-head__logo {
+  0%{transform: none}
+  25%{transform: rotate(360deg)}
+  75%{transform: rotate(-360deg)}
+  100%{transform: none}
+}

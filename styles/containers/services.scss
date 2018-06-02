@@ -1,0 +1,82 @@
+.services{
+  @include displayFlex(column, space-around, stretch, wrap);
+  height:535px;
+  background-color: $color_background;
+  font-family: $project_font_family_h;
+  font-size: 16px;
+  color: $text_color-grey;
+
+  &__items{
+    @include displayFlex(column, space-around, center, nowrap);
+    width: 25%;
+    height: 180px;
+  }
+  &__icon{
+    background: url("../img/services/services_sprites.png");
+    animation: services__icon 1s linear 1 normal;
+
+  &_background-design{
+    width: 42px;
+    height: 39px;
+    background-position:-175px -10px;
+    animation-delay: 1s;
+  }
+  &_background-seo{
+    width: 44px;
+    height: 44px;
+    background-position:-364px -10px;
+    animation-delay: 5s;
+  }
+  &_background-web{
+    width: 40px;
+    height: 40px;
+    background-position:-115px -10px;
+    animation-delay: 2s;
+  }
+  &_background-photography{
+    width: 44px;
+    height: 41px;
+    background-position: -428px -10px;
+    animation-delay: 6s;
+  }
+  &_background-app{
+    width: 26px;
+    height: 44px;
+    background-position: -10px -10px;
+    animation-delay: 3s;
+  }
+  &_background-graphic{
+    width: 39px;
+    height: 40px;
+    background-position: -56px -10px;
+    animation-delay: 7s;
+  }
+  &_background-game{
+    width: 44px;
+    height: 42px;
+    background-position: -300px -10px;
+    animation-delay: 4s;
+  }
+  &_background-illustrations{
+    width: 43px;
+    height: 46px;
+    background-position: -237px -10px;
+    animation-delay: 8s;
+  }
+  }
+  &__caption{
+    font-size: 12px;
+    text-transform: uppercase;
+    color:#191919;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  &__text{
+    width: 70%;
+    text-align: center;
+   }
+}
+
+@keyframes services__icon {
+  50% {transform:scale(1.2, 1.2)}
+}

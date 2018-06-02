@@ -1,0 +1,44 @@
+.contact-form{
+  @include displayFlex(column, center, center, nowrap);
+  height: 750px;
+  background-color: $color_background;
+  color: $text_color-grey;
+  font-size: 15px;
+  font-family: $project_font_family_h;
+  &__text{
+    width: 545px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__caption{
+    color: #1d1d1d;
+    font-weight: bold;
+    margin-bottom: 40px;
+  }
+  &__form{
+    min-width: 700px;
+  }
+  &__input{
+    height: 50px;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+  }
+  &__input_width{
+    width: 100%;
+  }
+  &__textarea{
+    min-height: 170px;
+    border-radius: 0;
+    border: none;
+    resize: none;
+  }
+  &__button{
+    @include button;
+    margin-left: 700px/2-180px/2;
+  }
+}
+.form-control:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}

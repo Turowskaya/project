@@ -1,0 +1,18 @@
+#scroller {
+  width:80px;
+  border:1px solid $text_color;
+  border-radius: 2px;
+  background-color: $primary_color;
+  text-align:center;
+  padding:2px;
+  position:fixed;
+  bottom:10px;
+  left:10px;
+  cursor:pointer;
+  display:none;
+  color:$text_color;
+  font-family:$project_font_family_primary;
+  font-size:12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}

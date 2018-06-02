@@ -3,36 +3,88 @@
     <head>
         <meta charset="UTF-8">
         <title>Piroll</title>
-        <link href="build/app.css" rel=stylesheet>
+        <link href="build/result.min.css" rel=stylesheet>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+        <script src="js/toTop.js"></script>
     </head>
     <body>
         <div class="wrapper-project">
             <header class="section-head" id="home">
-                <div class="section-head__logo"></div>
-                <nav class="section-head__menu">
-                    <a class="section-head__link" href="#home">home</a>
-                    <a class="section-head__link" href="#about">about</a>
-                    <a class="section-head__link" href="#work">work</a>
-                    <a class="section-head__link" href="#process">process</a>
-                    <a class="section-head__link" href="#services">services</a>
-                    <a class="section-head__link" href="#testimonials">testimonials</a>
-                    <a class="section-head__link" href="#contact">contact</a>
-                </nav>
+                <div class="section-head__pro">
+                    <div class="section-head__menu">
+                        <nav class="section-head__navbar navbar navbar-expand-lg navbar-light">
+                            <div class="navbar-brand section-head__logo"></div>
+                            <div class="section-head__navbar-collapse navbar-collapse" id="navbarTogglerDemo03">
+                                <ul class="section-head__navbar-nav navbar-nav  mt-2 mt-lg-0">
+                                    <li class="nav-item">
+                                        <a class="section-head__link active-link" href="#home">home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="section-head__link" href="#about">about</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="section-head__link" href="#work">work</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="section-head__link" href="#process">process</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="section-head__link" href="#services">services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="section-head__link" href="#testimonials">testimonials</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="section-head__link" href="#contact">contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                        </nav>
+                        </div>
+                </div>
                 <div class="section-head__banner">
                     <h1 class="section-head__caption">We Design and Develop</h1>
                     <p class="section-head__text">We are a new design studio based in USA. We have over 20 years of combened experience, and know a thing or two about designing websites and mobile apps.</p>
                     <button class="section-head__button">contact us</button>
                 </div>
             </header>
-            <section class="about">
+            <section class="about" id="about">
                 <div class="about__container">
                     <h2 class="about__caption">About Us</h2>
                     <p class="about__text">Divide have don't man wherein air fourth. Own itself make have night won't make. A you under Seed appear which good give. Own give air without fowl moveth dry first heaven fruit, dominion she'd won't very all.</p>
-                    <img src="img/signature.png">
+                    <img src="img/about/signature.png">
                 </div>
             </section>
             <section class="skills">
-                <div class="skills__statistic"></div>
+                <div class="skills__statistic">
+                    <div class="skills__wrapper">
+                        <div class="skills__caption">Professional Skills</div>
+                        <div class="skills__item">
+                            <div class="skills__text">ui/ux design 75%</div>
+                            <div class="skills__field">
+                                <div class="skills__field_fill skills__field_fill-design"></div>
+                            </div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__text">web development 90%</div>
+                            <div class="skills__field">
+                                <div class="skills__field_fill skills__field_fill-web"></div>
+                            </div>
+                        </div>
+                        <div class="skills__item">
+                            <div class="skills__text">marketing 65%</div>
+                            <div class="skills__field">
+                                <div class="skills__field_fill skills__field_fill-marketing"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="skills__img"></div>
             </section>
             <section class="statistic">
@@ -59,7 +111,7 @@
                         <img src="img/statistic/star.png">
                     </div>
                     <div class="statistic__items">
-                        <div class="statistic__number">612</div>
+                        <div class="statistic__number choice">612</div>
                         <div class="statistic__indicator">positive feedbacks</div>
                     </div>
                 </div>
@@ -68,30 +120,49 @@
                         <img src="img/statistic/like.png">
                     </div>
                     <div class="statistic__items">
-                        <div class="statistic__number">735</div>
+                        <div class="statistic__number choice">735</div>
                         <div class="statistic__indicator">happy clients</div>
                     </div>
                 </div>
             </section>
-            <section class="work">
-                <div class="work__img work__img_background-1"></div>
-                <div class="work__img work__img_background-2"></div>
-                <div class="work__img work__img_background-3"></div>
-                <div class="work__img work__img_background-4"></div>
-                <div class="work__img work__img_background-5"></div>
-                <div class="work__img work__img_background-6"></div>
-                <div class="work__img work__img_background-7"></div>
-                <div class="work__img work__img_background-8"></div>
+            <section class="work" id="work">
+                <div class="work__imgWrapper">
+                    <div class="work__img work__img_background-1"></div>
+                </div>
+                <div class="work__imgWrapper">
+                    <div class="work__img work__img_background-2"></div>
+                </div>
+                <div class="work__imgWrapper">
+                    <div class="work__img work__img_background-3"></div>
+                </div>
+                <div class="work__imgWrapper">
+                    <div class="work__img work__img_background-4"></div>
+                </div>
+                <div class="work__imgWrapper">
+                    <div class="work__img work__img_background-5"></div>
+                </div>
+                <div class="work__imgWrapper">
+                    <div class="work__img work__img_background-6"></div>
+                </div>
+                <div class="work__imgWrapper">
+                    <div class="work__img work__img_background-7"></div>
+                </div>
+                <div class="work__imgWrapper">
+                    <div class="work__img work__img_background-8"></div>
+                </div>
                 <button class="work__button">load more work</button>
             </section>
-            <section class="work-process">
+            <section class="work-process" id="process">
                 <div class="work-process__text">
-                    <h3>Our Work Process</h3>
-                    <p>Was years it seasons was there form he in in them together over that, third sixth gathered female creeping female creeping bearing behold years.</p>
+                    <h3 class="work-process__caption">Our Work Process</h3>
+                    <p>Was years it seasons was there form he in in them together over that, third sixth gathered female creeping bearing behold years.</p>
                 </div>
-                <iframe class="work-process__video" src="https://www.youtube.com/embed/rjxDePsXTsM" allowfullscreen></iframe>
+                <div id="video_holder" class="work-process__videoWrapper">
+                    <div id="button" class="work-process__videoButton"></div>
+                    <video class="work-process__video" width="1175" height="570" id="video" src="video/Piroll.mp4" type='video/mp4'></video>
+                </div>
             </section>
-            <section class="services">
+            <section class="services" id="services">
                 <div class="services__items">
                     <div class="services__icon services__icon_background-design"></div>
                     <h4 class="services__caption">ui/ux design</h4>
@@ -134,31 +205,34 @@
                     <p class="services__text">Whales likeness hath, man kind for them air two won't</p>
                 </div>
             </section>
-            <section class="testimonials">
-
-                    <!--<input class="friends__slide1" type="radio" name="point" id="slide1" checked>-->
-                    <!--<input class="friends__slide2" type="radio" name="point" id="slide2">-->
-                    <!--<input class="friends__slide3" type="radio" name="point" id="slide3">-->
-
-                <!--<div class="friends__slider">-->
-                    <!--<div class="slider slide1">-->
-                        <!--<div class="friends__group">-->
-                            <!--Outstanding job and exceeded all expectations.-->
-                            <!--It was a pleasure to work with them on a sizable-->
-                            <!--first project and am looking forward to start the next one asap.-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="slider slide2">-->
-                        <!--<div class="friends__group">-->
-                           <!--dsfadd;lsfakjjjjjjjjjjjjjj-->
-                        <!--</div>-->
-                    <!--</div>-->
-                    <!--<div class="slider slide3">-->
-                        <!--<div class="friends__group">-->
-                            <!--asdfasdfsalfdkj;;;;;;;;;;;-->
-                        <!--</div>-->
-                    <!--</div>-->
-                <!--</div>-->
+            <section class="testimonials" id="testimonials">
+                <div id="carouselExampleIndicators" class="carousel slide testimonials__carousel" data-ride="carousel">
+                    <ol class="carousel-indicators testimonials__carouselIndicators">
+                        <li class="testimonials__carouselIndicators-i" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                        <li class="testimonials__carouselIndicators-i active" data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li class="testimonials__carouselIndicators-i" data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner testimonials__innerCarousel">
+                        <div class="carousel-item testimonials__slide">
+                            <div class="carousel-caption d-none d-md-block testimonials__caption">
+                                <p>Now, any visitor can submit his opinion about any component or bicycle or read reviews, posted by other users.</p>
+                                <p class="testimonials__name-size">Ivan Ivanov</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item active testimonials__slide">
+                            <div class="carousel-caption d-none d-md-block testimonials__caption">
+                                <p>"Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap."</p>
+                                <p class="testimonials__name-size">Michel Hopkins</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item testimonials__slide">
+                            <div class="carousel-caption d-none d-md-block testimonials__caption">
+                                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p class="testimonials__name-size">Pelagea Arbuzova</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section class="clients">
                 <div class="clients__logo clients__logo_img-1">
@@ -177,7 +251,7 @@
                     <a class="clients__link" href="https://handmadevintagemarket.com" target="_blank"></a>
                 </div>
             </section>
-            <section class="contact-form">
+            <section class="contact-form" >
                 <div class="contact-form__text">
                     <h5 class="contact-form__caption">Need a Project?</h5>
                     <p>Let us know what you're looking for in an agency. We'll take a look and see if this could be the start of something beautiful.</p>
@@ -200,7 +274,7 @@
                     <button type="submit" class="contact-form__button btn btn-primary">send message</button>
                 </form>
             </section>
-            <footer class="section-down">
+            <footer class="section-down" id="contact">
                 <div class="section-down__logo">
                     <span>Piroll Design, Inc.</span>
                     <span>© 2017 Piroll. All right reserved. Designed by robirurk.</span>
@@ -223,13 +297,23 @@
                     </div>
                 </div>
                 <div class="section-down__social">
-                    <div class="section-down__item">Facebook</div>
-                    <div class="section-down__item">Twitter</div>
-                    <div class="section-down__item">Instagram</div>
-                    <div class="section-down__item">Dribble</div>
+                    <div>
+                        <a class="section-down__item" href="">Facebook</a>
+                    </div>
+                    <div>
+                        <a class="section-down__item" href="">Twitter</a>
+                    </div>
+                    <div>
+                        <a class="section-down__item" href="">Instagram</a>
+                    </div>
+                    <div>
+                        <a class="section-down__item" href="">Dribble</a>
+                    </div>
                 </div>
             </footer>
+            <div id="scroller">to top</div>
         </div>
+        <script src="js/head-menu.js"></script>
+        <script src="js/work-process.js"></script>
     </body>
-    <!--<script src="js.js"></script>-->
 </html>

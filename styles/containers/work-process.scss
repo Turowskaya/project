@@ -1,0 +1,38 @@
+.work-process{
+  @include displayFlex(column, center, center, nowrap);
+  height: 930px;
+
+  &__text{
+    @include displayFlex(column, space-between, stretch, nowrap);
+    width: 510px;
+    height: 130px;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: $project_font_family_text;
+    font-size: 14px;
+    color: $text_color-grey;
+  }
+  &__caption{
+    font-size: 32px;
+    font-family: $project_font_family_primary;
+    color: #000000;
+    font-weight: bold;
+  }
+  &__videoWrapper{
+    position: relative;
+    min-width: 1175px;
+    height: 570px;
+  }
+}
+#button{
+  position: absolute;
+  min-width: 100%;
+  height: 570px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background: url("../img/work-process/playIcon.png") center no-repeat;
+  &.played{
+      background: none;
+  }
+}

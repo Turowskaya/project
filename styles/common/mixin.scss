@@ -1,0 +1,22 @@
+@mixin button{
+  background-color: $primary_color;
+  color: $text_color;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 2px;
+  width: 180px;
+  height: 50px;
+  border-radius: 0;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    background-color: $text_color-grey;
+  }
+}
+@mixin displayFlex($flexDirection, $justifyContent, $alignItems, $flexWrap){
+  display: flex;
+  flex-direction: $flexDirection;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-wrap: $flexWrap;
+}
